@@ -16,7 +16,7 @@ export function Hero() {
         
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="#query-creator">
+          <Link to="/query-creator">
             <button className="bg-ado-primary text-white font-inter text-17 font-bold leading-8 tracking-tight px-6 py-4 rounded-lg hover:bg-blue-600 transition-colors flex items-center gap-3">
               Get Started
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ export function Hero() {
                 <path d="M1 7.40111H13.1333" stroke="currentColor" strokeWidth="2" strokeLinecap="square" strokeLinejoin="bevel"/>
               </svg>
             </button>
-          </a>
+          </Link>
           <Link to="/documentation">
             <button className="text-ado-text font-inter text-17 font-bold leading-8 tracking-tight px-6 py-4 rounded-lg hover:bg-gray-50 transition-colors">
               Learn More

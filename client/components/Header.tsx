@@ -27,32 +27,36 @@ export function Header() {
           >
             Environment Request
           </Link>
+          <Link
+            to="/query-creator"
+            className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"
+          >
+            Query Creator
+          </Link>
+          <Link
+            to="/anastasia"
+            className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"
+          >
+            Anastasia's Project
+          </Link>
+          <Link
+            to="/umair"
+            className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"
+          >
+            Umair's Project
+          </Link>
+        </nav>
+
+        {/* GitHub Button */}
+        <div className="flex-shrink-0">
           <a
             href="https://github.com/RQ-PSPC/pspc-co-op-projects"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"
-          >
-            GitHub
-          </a>
-          <a
-            href="mailto:Rachel.Qi@tpsgc-pwgsc.gc.ca"
-            className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"
-          >
-            Contact
-          </a>
-        </nav>
-
-        {/* Azure DevOps Button */}
-        <div className="flex-shrink-0">
-          <a
-            href="https://azure.microsoft.com/en-ca/products/devops/?nav=min"
-            target="_blank"
-            rel="noopener noreferrer"
             className="bg-ado-primary text-white font-inter text-sm sm:text-17 font-bold leading-normal tracking-tight px-3 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-600 transition-colors inline-block"
           >
-            <span className="hidden sm:inline">Azure DevOps</span>
-            <span className="sm:hidden">Azure</span>
+            <span className="hidden sm:inline">GitHub</span>
+            <span className="sm:hidden">GH</span>
           </a>
         </div>
       </div>

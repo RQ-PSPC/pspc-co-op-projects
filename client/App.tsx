@@ -9,9 +9,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Documentation from "./pages/Documentation";
 import EnvironmentRequest from "./pages/EnvironmentRequest"
-import GitHub from "./pages/GitHub";
-import Contact from "./pages/Contact";
+import Anastasia from "./pages/Anastasia";
+import Umair from "./pages/Umair";
 import NotFound from "./pages/NotFound";
+import { QueryCreator } from "./pages/QueryCreator";
 
 const queryClient = new QueryClient();
 
@@ -25,8 +26,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/environment-request" element={<EnvironmentRequest />} />
-          <Route path="/github" element={<GitHub />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/anastasia" element={<Anastasia/>} />
+          <Route path="/umair" element={<Umair/>} />
+          <Route path="/query-creator" element={<QueryCreator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

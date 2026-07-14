@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 
 export function QueryCreator() {
 
@@ -57,20 +59,19 @@ export function QueryCreator() {
   };
 
   return (
-    <section id="query-creator" className="bg-ado-section-bg px-4 h-[1000px] flex items-center">
-      <div className="max-w-6xl mx-auto w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            <h2 className="text-ado-text font-inter text-4xl font-bold leading-12 tracking-tight">
-              Query Creator
-            </h2>
+    <div className="min-h-screen bg-ado-bg">
+      <Header />
+      <main className="px-4 py-20">
+        <div className="max-w-4xl mx-auto text-left">
+          <h1 className="text-ado-text font-inter text-4xl font-bold mb-8 text-center">
+            🔍 Query Creator
+          </h1>
+          <p className="text-ado-text font-inter text-xl mb-4 leading-8 tracking-tight opacity-70">
+            Type the project name(s) you wish to add queries to, separated by commas. Optionally, enter a name and WIQL input to add a custom query. Then click Create Query.
+          </p>
 
-            <p className="text-ado-text font-montserrat text-xl leading-8 tracking-tight opacity-70">
-              Type the project name(s) you wish to add queries to, separated by commas. Optionally, enter a name and WIQL input to add a custom query. Then click Create Query.
-            </p>
-
-            <div className="space-y-6">
+          <div className="space-y-6">
+            {/* Form Inputs */}
               {/* Project Names Input */}
               <div className="space-y-2">
                 <label className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight">
@@ -210,36 +211,8 @@ export function QueryCreator() {
               )}
             </div>
           </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="relative w-full h-[521px]">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/91d92a80b9aefc75a4d802eacd0463086369e606?width=1200&format=webp&quality=90"
-                alt=""
-                className="absolute top-0 left-6 w-[486px] h-[311px] opacity-80"
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/6c12267dd9403303bceb64d843fd489cb4c20ba0?width=800&format=webp&quality=90"
-                alt=""
-                className="absolute top-[224px] left-0 w-[299px] h-[297px] opacity-75"
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/08eb7f647189d75f5f738d55060284b727e6a0e1?width=600&format=webp&quality=90"
-                alt=""
-                className="absolute top-[245px] left-[291px] w-[226px] h-[229px] opacity-70"
-              />
-              <div className="absolute top-[85px] left-[125px] w-[288px] h-[325px] bg-white rounded-lg shadow-2xl">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/aa62bfcb663aab61a96958ae28af33a0661b454a?width=800&format=webp&quality=90"
-                  alt="ADO Logo"
-                  className="w-[299px] h-[201px] absolute top-[61px] left-[-5px]"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </main>
+      <Footer />
+    </div>
   );
 }
