@@ -16,12 +16,6 @@ export function Header() {
         {/* Navigation - Desktop */}
         <nav className="hidden lg:flex items-center space-x-12">
           <Link
-            to="/documentation"
-            className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"
-          >
-            Documentation
-          </Link>
-          <Link
             to="/environment-request"
             className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"
           >
