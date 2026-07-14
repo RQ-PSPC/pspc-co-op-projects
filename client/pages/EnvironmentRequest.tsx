@@ -267,7 +267,7 @@ export default function EnvironmentRequest() {
       setUserRolesAccess(formattedUserRolesAccess);
 
       const response = await fetch(
-        "https://adoquerycreator-g9dvaxbwbdf5fcec.eastus-01.azurewebsites.net/api/environment-creator",
+        "https://pspc-co-op-projects-axhzgvbze6d9c7b8.eastus-01.azurewebsites.net/api/environment-creator",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

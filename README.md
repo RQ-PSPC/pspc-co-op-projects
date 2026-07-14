@@ -1,13 +1,13 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/r-chel-i/ado-query-creator">
+  <a href="https://github.com/RQ-PSPC/pspc-co-op-projects">
     <img src="https://dragonboat.io/wp-content/uploads/2021/12/azure-devops-color-icon.png" alt="Logo" width="80" height="80">
   </a>
 
-<h1 align="center">🔍 ADO Tool Suite & Query Creator </h1>
+<h1 align="center">🖥️ PSPC CO-OP Projects </h1>
   <p align="center">
-      A lightweight website hosting various tools for Azure Devops (ADO). <br>
+      A lightweight website hosting various tools made by students during their CO-OP terms at Public Services and Procurement Canada (PSPC). <br>
       Integrated with an Azure Functions API to securely store Personal Access Token and Organization information. <br>
       <br />
     </p>
@@ -23,7 +23,7 @@
    - Ensure that the PAT has (at least) Read & write permissions for Work Items.  
    - Click create and copy the PAT.  
 
-2. In Azure Functions, navigate to **adoquerycreator -> Environment Variables**.
+2. In Azure Functions, navigate to **pspc-co-op-projects -> Environment Variables**.
 
    - Click add and enter `ADO_PAT` as the `name`. Paste your PAT from ADO in the `value` field.  
    - Click add and enter `ADO_ORG` as the `name`. Enter the name of your ADO organization as the `value`.  

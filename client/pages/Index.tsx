@@ -2,7 +2,7 @@ import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { DashboardImage } from '../components/DashboardImage';
 import { Features } from '../components/Features';
-import { QueryCreator } from '../components/QueryCreator';
+import { QueryCreator } from './QueryCreator';
 import { Footer } from '../components/Footer';
 
 export default function Index() {

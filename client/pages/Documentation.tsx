@@ -9,7 +9,7 @@ export default function Documentation() {
       <main className="px-4 py-20">
         <div className="max-w-4xl mx-auto text-left">
           <h1 className="text-ado-text font-inter text-4xl font-bold mb-12 text-center">
-            🔍 ADO Query Creator
+            🖥️ PSPC CO-OP Projects
           </h1>
 
           {/* Azure DevOps Setup */}
@@ -36,7 +36,7 @@ export default function Documentation() {
                 </ul>
               </li>
               <li>
-                In Azure Functions, navigate to <strong>adoquerycreator → Environment Variables</strong> Create the following variables:.
+                In Azure Functions, navigate to <strong>pspc-co-op-projects → Environment Variables</strong> Create the following variables:.
                 <ul className="list-disc list-inside ml-6 mt-2">
                   <li>
                     <strong>ADO_PAT:</strong> Paste your PAT from ADO as the value.

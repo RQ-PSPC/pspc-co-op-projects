@@ -12,7 +12,7 @@ export default function Contact() {
             Contact
           </h1>
           <p className="text-ado-text font-montserrat text-xl leading-8 opacity-70 mb-8">
-            This page is coming soon. Return to the homepage to explore our ADO Tool Suite.
+            This page is coming soon. Return to the homepage to explore our PSPC CO-OP Projects.
           </p>
           <Link 
             to="/" 

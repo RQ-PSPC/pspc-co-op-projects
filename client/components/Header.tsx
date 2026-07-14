@@ -8,7 +8,7 @@ export function Header() {
         <div className="flex-shrink-0">
           <Link to="/">
             <h1 className="text-ado-text font-inter text-xl sm:text-2xl font-bold tracking-tight hover:text-ado-primary transition-colors">
-              ADO Tool Suite
+              PSPC CO-OP Projects
             </h1>
           </Link>
         </div>
@@ -28,7 +28,7 @@ export function Header() {
             Environment Request
           </Link>
           <a
-            href="https://github.com/r-chel-i/ado-query-creator"
+            href="https://github.com/RQ-PSPC/pspc-co-op-projects"
             target="_blank"
             rel="noopener noreferrer"
             className="text-ado-text font-inter text-15 font-bold leading-7 tracking-tight hover:text-ado-primary transition-colors"

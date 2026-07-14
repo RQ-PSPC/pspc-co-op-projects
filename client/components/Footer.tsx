@@ -40,7 +40,7 @@ export function Footer() {
             
             {/* GitHub */}
             <a
-              href="https://github.com/r-chel-i/ado-query-creator"
+              href="https://github.com/RQ-PSPC/pspc-co-op-projects"
               target="_blank"
               rel="noopener noreferrer"
               className="text-ado-text hover:text-ado-primary transition-colors"
