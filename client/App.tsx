@@ -16,12 +16,15 @@ import { QueryCreator } from "./pages/QueryCreator";
 
 const queryClient = new QueryClient();
 
+const rawBase = import.meta.env.BASE_URL;
+const basename = rawBase === "/" ? "/" : rawBase.replace(/\/$/, "");
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/documentation" element={<Documentation />} />
