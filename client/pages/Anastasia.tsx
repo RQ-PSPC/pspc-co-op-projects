@@ -17,15 +17,16 @@ export default function Anastasia() {
             🎀 Anastasia's Project 🎀
           </h1>
 
-          <div className="max-w-md mx-auto>">
+          <div className="max-w-md mx-auto">
             <label className="block mb-2 font-semibold">
               Enter your name:
             </label>
-            <input type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Type here..."
-            className="w-full p-2 border rounded"
+            <input 
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Type here..."
+              className="w-full p-2 border rounded"
             />
             <p className="mt-4">
               You entered: {name}
