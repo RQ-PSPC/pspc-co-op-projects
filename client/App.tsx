@@ -11,7 +11,6 @@ import Documentation from "./pages/documentation";
 import EnvironmentRequest from "./pages/environment-request"
 import Anastasia from "./pages/anastasia";
 import Umair from "./pages/umair";
-import NotFound from "./pages/NotFound";
 import { QueryCreator } from "./pages/query-creator";
 
 const queryClient = new QueryClient();
