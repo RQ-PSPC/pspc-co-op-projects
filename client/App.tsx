@@ -6,13 +6,13 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import Documentation from "./pages/Documentation";
-import EnvironmentRequest from "./pages/EnvironmentRequest"
-import Anastasia from "./pages/Anastasia";
-import Umair from "./pages/Umair";
+import Index from "./pages";
+import Documentation from "./pages/documentation";
+import EnvironmentRequest from "./pages/environment-request"
+import Anastasia from "./pages/anastasia";
+import Umair from "./pages/umair";
 import NotFound from "./pages/NotFound";
-import { QueryCreator } from "./pages/QueryCreator";
+import { QueryCreator } from "./pages/query-creator";
 
 const queryClient = new QueryClient();
 
