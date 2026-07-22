@@ -6,7 +6,7 @@ export default function Umair() {
   return (
     <div className="min-h-screen bg-ado-bg">
       <Header />
-      <main className="px-4 py-20">
+      <main className="px-4 py-6">
         <div className="max-w-4xl mx-auto text-left">
           <h1 className="text-ado-text font-inter text-4xl font-bold mb-12 text-center">
              🤖 Umair's Project
