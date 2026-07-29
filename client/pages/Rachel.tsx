@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { Link } from 'react-router-dom';
 
-export function Features() {
+export default function Rachel() {
   const features = [
     {
       icon: (
@@ -36,53 +38,20 @@ export function Features() {
       description: "Create and configure bulk work items for SA&A controls in ADO. Still in development. Designed by Rachel.",
       href: "https://github.com/RQ-PSPC/pspc-co-op-projects",
       external: true
-    },
-      
-    {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="37" viewBox="0 0 30 37" fill="none">
-          <path d="M0 27.75V8.75C0 7.7835 0.783502 7 1.75 7C2.7165 7 3.5 7.7835 3.5 8.75V27.75C3.5 28.7165 2.7165 29.5 1.75 29.5C0.783502 29.5 0 28.7165 0 27.75Z" fill="#979797"/>
-          <path d="M26 27.75V17.75C26 16.7835 26.7835 16 27.75 16C28.7165 16 29.5 16.7835 29.5 17.75V27.75C29.5 28.7165 28.7165 29.5 27.75 29.5C26.7835 29.5 26 28.7165 26 27.75Z" fill="#979797"/>
-          <path d="M26 8.25C26 7.47504 25.3265 6.30197 23.1602 5.21875C21.0983 4.18784 18.1271 3.5 14.75 3.5C11.3729 3.5 8.40167 4.18784 6.33984 5.21875C4.17349 6.30197 3.5 7.47505 3.5 8.25C3.5 9.02495 4.17349 10.198 6.33984 11.2812C8.40167 12.3122 11.3729 13 14.75 13C18.1271 13 21.0983 12.3122 23.1602 11.2812C25.3265 10.198 26 9.02496 26 8.25ZM29.5 8.25C29.5 11.0649 27.2632 13.1418 24.7246 14.4111C22.0814 15.7327 18.5525 16.5 14.75 16.5C10.9475 16.5 7.41861 15.7327 4.77539 14.4111C2.23682 13.1418 0 11.0649 0 8.25C0 5.43512 2.23682 3.35815 4.77539 2.08887C7.41861 0.767306 10.9475 0 14.75 0C18.5525 0 22.0814 0.767308 24.7246 2.08887C27.2632 3.35815 29.5 5.43513 29.5 8.25Z" fill="#979797"/>
-          <path d="M0 17.75C0 16.7835 0.783502 16 1.75 16C2.7165 16 3.5 16.7835 3.5 17.75C3.5 18.7307 4.26544 20.0164 6.3877 21.1592C8.43865 22.2634 11.392 23 14.75 23C18.108 23 21.0614 22.2634 23.1123 21.1592C25.2346 20.0164 26 18.7307 26 17.75C26 16.7835 26.7835 16 27.75 16C28.7165 16 29.5 16.7835 29.5 17.75C29.5 20.6351 27.3551 22.8495 24.7725 24.2402C22.1184 25.6694 18.5715 26.5 14.75 26.5C10.9285 26.5 7.38164 25.6694 4.72754 24.2402C2.14491 22.8495 0 20.6351 0 17.75Z" fill="#979797"/>
-          <path d="M3.5 27.75C3.5 28.7307 4.26544 30.0164 6.3877 31.1592C8.43865 32.2634 11.392 33 14.75 33C18.108 33 21.0614 32.2634 23.1123 31.1592C25.2346 30.0164 26 28.7307 26 27.75H29.5C29.5 30.6351 27.3551 32.8495 24.7725 34.2402C22.1184 35.6694 18.5715 36.5 14.75 36.5C10.9285 36.5 7.38164 35.6694 4.72754 34.2402C2.14491 32.8495 0 30.6351 0 27.75H3.5Z" fill="#979797"/>
-        </svg>
-      ),
-      title: "Anastasia's Project",
-      description: "Designed by Anastasia.",
-      to: "/anastasia"
-    },
-
-    {
-      icon: (
-        <svg width="44" height="38" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fillRule="evenodd" clipRule="evenodd" d="M9.99999 29.828L0.585994 20.414C-0.195006 19.633 -0.195006 18.367 0.585994 17.586L9.99999 8.172L12.829 11L4.82899 19L12.829 27L9.99999 29.828Z" fill="#0078D6"/>
-          <path fillRule="evenodd" clipRule="evenodd" d="M34 29.828L31.171 27L39.171 19L31.171 11L34 8.172L43.414 17.586C44.195 18.367 44.195 19.633 43.414 20.414L34 29.828Z" fill="#0078D6"/>
-          <rect x="15.5719" y="36.4553" width="36.985" height="3.99999" transform="rotate(-75.954 15.5719 36.4553)" fill="#979797"/>
-        </svg>
-      ),
-      title: "Umair's Project",
-      description: "Designed by Umair.",
-      to: "/umair"
-    },
-        
-    {
-      icon: (
-        <svg width="43" height="43" viewBox="0 0 40 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M35.8258 12.4511C34.6791 8.56316 31.4362 5.32024 27.5483 4.17358C24.592 3.31358 22.5495 3.38524 21.1341 4.44233C19.432 5.71441 19.2349 8.00774 19.2349 9.63816V14.0994C19.2349 18.5069 21.2416 20.7465 25.1833 20.7465H30.3253C31.9378 20.7465 34.2491 20.5494 35.5212 18.8473C36.6141 17.4498 36.7037 15.4073 35.8258 12.4511Z" fill="#979797"/>
-          <path d="M30.8794 23.9386C30.4135 23.4011 29.7327 23.0965 29.0339 23.0965H22.6198C19.4664 23.0965 16.9044 20.5344 16.9044 17.3811V10.967C16.9044 10.2682 16.5998 9.58739 16.0623 9.12156C15.5427 8.65573 14.826 8.44073 14.1452 8.53031C9.9348 9.06781 6.0648 11.3791 3.53855 14.8549C0.99438 18.3486 0.0627134 22.6128 0.868963 26.8769C2.03355 33.0403 6.96063 37.9673 13.1419 39.1319C14.1273 39.329 15.1127 39.4186 16.0981 39.4186C19.341 39.4186 22.4764 38.4153 25.146 36.4623C28.6219 33.9361 30.9331 30.0661 31.4706 25.8557C31.5602 25.1569 31.3452 24.4582 30.8794 23.9386Z" fill="#0078D6"/>
-        </svg>
-      ),
-      title: "Work Item Heatmap",
-      description: "Visualize project activity and work item assignments at a glance. Designed by Nehan.",
-      href: "mailto:Nehan.Arora@tpsgc-pwgsc.gc.ca"
     }
   ];
-
+  
   return (
-    <section className="px-4 py-8 mb-0">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+    <div className="min-h-screen bg-ado-bg">
+      <Header />
+      <main className="px-4 py-6">
+        <div className="max-w-6xl mx-auto text-left">
+          <h1 className="text-ado-text font-inter text-4xl font-bold mb-12 text-center">
+             🐝 Rachel's Projects
+          </h1>
+         
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {features.map((feature, index) => {
             const content = (
               <>
@@ -126,6 +95,8 @@ export function Features() {
           })}
         </div>
       </div>
-    </section>
+      </main>
+      <Footer />
+    </div>
   );
 }

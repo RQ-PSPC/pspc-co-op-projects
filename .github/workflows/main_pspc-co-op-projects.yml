@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js project to Azure Function App - adoquerycreator
+name: Build and deploy Node.js project to Azure Function App - pspc-co-op-projects
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: '22.x' # set this to the node version to use (supports 8.x, 10.x, 12.x)
+  NODE_VERSION: '22' # set this to the node version to use (supports 8.x, 10.x, 12.x)
 
 jobs:
   build:
@@ -60,20 +60,22 @@ jobs:
           name: node-app
 
       - name: Unzip artifact for deployment
-        run: unzip release.zip
+        run: |
+          unzip release.zip
+          rm release.zip
       
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C1BB48E635224F05B3B23E418F8DAD18 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_97DF0AA3E16446059E7254F5BB96C1F7 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4F494E5412994B26857A6C993628CEAD }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E18D65F9541D4073802E58179D0536F2 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_525FDF21EF864D998B95DBA3742E536A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A9EEF2FDE9B443CDB706EB3ED8C44B8D }}
 
       - name: 'Run Azure Functions Action'
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'adoquerycreator'
+          app-name: 'pspc-co-op-projects'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           

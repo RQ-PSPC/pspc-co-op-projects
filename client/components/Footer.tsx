@@ -5,7 +5,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Made by Rachel */}
           <div className="text-ado-text font-montserrat text-15 leading-7 tracking-tight">
-            Made by Rachel
+            Made by Rachel for Internal PSPC Use
           </div>
           
           {/* Social Icons */}
@@ -40,7 +40,7 @@ export function Footer() {
             
             {/* GitHub */}
             <a
-              href="https://github.com/r-chel-i/ado-query-creator"
+              href="https://github.com/RQ-PSPC/pspc-co-op-projects"
               target="_blank"
               rel="noopener noreferrer"
               className="text-ado-text hover:text-ado-primary transition-colors"
